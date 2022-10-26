@@ -178,7 +178,7 @@ export default function Home() {
 							<Flex flexWrap="wrap" justify="space-around">
 								<Heading w="100%" textAlign="center" mb="30px">Your NFTs:</Heading>
                 {images.map(image => {
-                  return <Image src={image.props.src} boxSize={300} objectFit="cover" m="10px"/>
+                  return <Image key={image.props.src} src={image.props.src} boxSize={300} objectFit="cover" m="10px"/>
                 })}
 							</Flex>
 						) : (
